@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      dockerfile_inline: |
+        FROM elixir:1.18
+        WORKDIR /app
+        COPY mix.exs mix.lock .
+        RUN mix deps.get
+        RUN mix deps.compile
+    working_dir: /app
+    volumes:
+      - .:/app
