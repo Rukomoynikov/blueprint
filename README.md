@@ -23,3 +23,6 @@ be found at <https://hexdocs.pm/blueprint>.
 ```sh
 mix do archive.build, archive.install
 ```
+
+## Copied from
+https://github.com/phoenixframework/phoenix/tree/main/installer
